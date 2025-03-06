@@ -103,8 +103,6 @@ const MovingBackground = () => {
       canvas.height / 2 - 300, // Line 7 (further above)
       canvas.height / 2 + 400, // Line 8 (further below)
       canvas.height / 2 - 400, // Line 9 (further above)
-      canvas.height / 2 - 600, // Line 8 (further below)
-      canvas.height / 2 - 500, // Line 9 (further above)
     ];
 
     // Draw multiple squiggly lines
