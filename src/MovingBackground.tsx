@@ -11,9 +11,11 @@ const MovingBackground = () => {
     if (!ctx) return;
 
     // Set canvas size
-    const resizeCanvas = () => {
+    const initialResizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      console.log(canvas.width, canvas.height);
+      console.log(window.innerWidth, window.innerHeight);
     };
 
     // Define line types with slight variations (except opacity)
@@ -92,6 +94,26 @@ const MovingBackground = () => {
       canvas.height / 2 + 200, // Line 5
       canvas.height / 2 - 400, // Line 5
     ];
+
+    // Ensure lines are recalculated during resize
+    const updateVerticalPositions = () => {
+      verticalPositions[0] = canvas.height / 2;
+      verticalPositions[1] = canvas.height / 2 - 200;
+      verticalPositions[2] = canvas.height / 2 + 400;
+      verticalPositions[3] = canvas.height / 2 + 200;
+      verticalPositions[4] = canvas.height / 2 - 400;
+    };
+
+    // Resize logic
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      updateVerticalPositions();
+    };
+
+    window.addEventListener("resize", () => {
+      initialResizeCanvas();
+    });
 
     // Draw multiple squiggly lines
     const drawSquigglyLines = () => {
