@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: 
+  hsla(0, 0%, 100%, 1);
+  background-attachment: fixed;
+}
+.moving-background {
+  position: fixed; /* Fixed position to cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind other content */
+  background-color: rgba(0, 0, 0, 0.1); /* Temporary background to check visibility */
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Company Info Section */
+.company-info {
+  font-family: Helvetica;
+  margin-top: 50px; /* Space from products */
+  padding: 20px;
+  text-align: center;
+  color: hsl(52, 38%, 8%);
+}
+
+.company-name {
+  font-size: 45px;
+  font-weight:bolder;
+  margin-bottom: 20px;
+  letter-spacing:normal;
+  text-align: center;
+  color: hsl(52, 38%, 8%);
+}
+
+.company-description {
+  font-size: 20px;
+  font-family: Helvetica;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 10px;
+  color: hsl(52, 38%, 8%);
+}
+
+.info {
+  margin-top: 22px;
+  font-family: Helvetica;
+  color: hsl(52, 38%, 8%);
+  text-align: center;
+}
+
+.info h4 {
+  font-family: Helvetica;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: hsl(52, 38%, 8%);
+}
+
+.what-we-do-container {
+    max-width: 1355px;
+    margin: 100px auto; /* Add more space above and below */
+    padding: 20px;
+    border: 1px solid hsla(0, 0%, 100%, 0.075); 
+    box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0.089);
+    border-radius: 40px;
+  }
+  
+  .what-we-do-content {
+    background-color: hsla(0, 0%, 100%, 0.699); /* Match the product card color */
+
+    color: hsl(52, 38%, 8%); /* Text color */
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0.089);
+  }
+  
+  .what-we-do-content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 40px
+  }
+  
+  .what-we-do-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: Helvetica, sans-serif;
+  }
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .product-card {
+    width: 350px; /* Fixed width for consistency */
+    height: 450px; /* Fixed height for flip effect */
+    position: relative;
+    margin-bottom: 30px;
+    padding: 16px;
+    border-radius: 10%;
+    font-family: Helvetica;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid hsla(0, 0%, 100%, 0.075); 
+    box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0.089);
+    perspective: 1000px; /* Enables 3D effect for flipping */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease-in-out; /* Smooth transition */
+  }
+  .product-card:hover {
+    transition: transform 0.3s;
+  }
+
+  .product-card:hover .flip-card-inner {
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.13); 
+    transform: rotateY(180deg); /* Flip the card */
+    border-radius: 10%;
+    
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    border-radius: 10%;
+    height: 100%;
+    backface-visibility: hidden; /* Prevents the back side from being visible */
+  }
+  
+  .flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(52, 38%, 8%);
+    font-family: Helvetica;
+    border-radius: 10%;
+  }
+  
+  .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(52, 38%, 8%);
+    font-family: Helvetica;
+    font-size: 18px;
+    border-radius: 10%;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  /* Existing button styles */
+  .flip-card-back button {
+    position: relative; /* Required for positioning the pseudo-element */
+    background-color: hsla(0, 0%, 100%, 0.623); 
+    color: hsl(52, 38%, 8%);
+    font-style: italic;
+    font-family: Helvetica;
+    font-size:20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: auto; /* Push button to the bottom */
+    padding-right: 40px; /* Add space for the ">" symbol */
+    transition: padding-right 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Add the ">" symbol using a pseudo-element */
+  .flip-card-back button::after {
+  content: ">"; /* Add the ">" symbol */
+  position: absolute;
+  right: 17px; /* Initial position */
+  transition: right 0.2s ease; /* Smooth transition for hover effect */
+  font-size: 1.3em;
+  top: 17%;
+}
+  
+  /* Move the ">" symbol to the right on hover */
+  .flip-card-back button:hover::after {
+    right: 10px; /* Move the ">" symbol to the right */
+  }
+  
+  /* Optional: Add a hover effect to the button */
+  .flip-card-back button:hover {
+    transition: 0.3s; /* Darker shade on hover */
+  }
+  
+  .product-card img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: contain; /* or cover */
+    object-position: center; /* Center the image */
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  .product-card h2 {
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color:hsl(52, 38%, 8%);
+    margin-top: 12px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
