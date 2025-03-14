@@ -4,7 +4,7 @@ const WhatWeDo = () => {
   return (
     <div className="what-we-do-container">
       <div className="what-we-do-content">
-        <h2>MIDA ME TEEME</h2>
+        <h1>MIDA ME TEEME</h1>
         <h2>Tark alternatiiv AutoCAD-ile</h2>
         <p>
           Oleme 4M CAD & BIM projekteerimise tarkvara ametlik edasimüüja Eestis.

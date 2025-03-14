@@ -3,24 +3,30 @@
     max-width: 1355px;
     margin: 100px auto; /* Add more space above and below */
     padding: 20px;
-    border: 1px solid hsla(0, 0%, 100%, 0.075); 
+    border: 1px solid hsla(0, 0%, 48%, 0.075);
+    background-color:rgba(50, 50, 50, 0);
     box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0.089);
-    border-radius: 40px;
+    border-radius: 60px;
   }
   
   .what-we-do-content {
-    background-color: hsla(0, 0%, 100%, 0.699); /* Match the product card color */
-
+    background-color: hsl(0, 0%, 100%); /* Match the product card color */
     color: hsl(52, 38%, 8%); /* Text color */
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     padding-top: 10px;
     border-radius: 40px;
     text-align: center;
-    box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0.089);
+    box-shadow: 0px 2px 6px hsla(0, 0%, 16%, 0.089);
   }
   
+  .what-we-do-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 40px
+  }
   .what-we-do-content h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     font-family: Helvetica, sans-serif;
     margin-bottom: 40px
