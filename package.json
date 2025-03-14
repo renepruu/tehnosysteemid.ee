@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://your-username.github.io/tehnosysteemid.ee/",
+  "homepage": "https://renepruu.github.io/tehnosysteemid.ee/",
   "dependencies": {
     "framer-motion": "^12.4.10",
     "react": "^19.0.0",
