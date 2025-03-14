@@ -19,7 +19,7 @@ const MovingBackground = () => {
     // Define line types with slight variations (except opacity)
     const lineTypes = [
       {
-        amplitude: 100,
+        amplitude: 70,
         frequency: 0.002,
         opacity: 0.7,
         speed: 50,
@@ -35,7 +35,7 @@ const MovingBackground = () => {
         xOffset: 0,
       }, // Line 2
       {
-        amplitude: 120,
+        amplitude: 88,
         frequency: 0.0015,
         opacity: 0.7,
         speed: 60,
@@ -51,7 +51,7 @@ const MovingBackground = () => {
         xOffset: 0,
       }, // Line 4
       {
-        amplitude: 110,
+        amplitude: 60,
         frequency: 0.001,
         opacity: 0.7,
         speed: 70,
@@ -67,7 +67,7 @@ const MovingBackground = () => {
         xOffset: 0,
       }, // Line 6
       {
-        amplitude: 130,
+        amplitude: 100,
         frequency: 0.0008,
         opacity: 0.7,
         speed: 80,
@@ -75,34 +75,22 @@ const MovingBackground = () => {
         xOffset: 0,
       }, // Line 7
       {
-        amplitude: 85,
+        amplitude: 50,
         frequency: 0.0022,
         opacity: 0.7,
         speed: 35,
         color: "rgba(201, 202, 134, 0.7)",
         xOffset: 0,
       }, // Line 8
-      {
-        amplitude: 95,
-        frequency: 0.0018,
-        opacity: 0.7,
-        speed: 45,
-        color: "rgba(201, 202, 134, 0.7)",
-        xOffset: 0,
-      }, // Line 9
     ];
 
     // Define vertical positions for the lines
     const verticalPositions = [
-      canvas.height / 2, // Original line (center)
-      canvas.height / 2 + 100, // Line 2 (slightly below)
-      canvas.height / 2 - 200, // Line 3 (slightly above)
-      canvas.height / 2 + 200, // Line 4 (further below)
-      canvas.height / 2 - 100, // Line 5 (further above)
-      canvas.height / 2 + 300, // Line 6 (further below)
-      canvas.height / 2 - 300, // Line 7 (further above)
-      canvas.height / 2 + 400, // Line 8 (further below)
-      canvas.height / 2 - 400, // Line 9 (further above)
+      canvas.height / 2, // Original line
+      canvas.height / 2 - 200, // Line 5
+      canvas.height / 2 + 400, // Line 4
+      canvas.height / 2 + 200, // Line 5
+      canvas.height / 2 - 400, // Line 5
     ];
 
     // Draw multiple squiggly lines
@@ -120,14 +108,14 @@ const MovingBackground = () => {
           ctx.beginPath();
 
           // Start at 30px from the left edge
-          let startX = 30;
+          let startX = 20;
           let startY =
             verticalPosition +
             exponentialWave(startX, time, line.frequency, line.amplitude); // Use exponential function
           ctx.moveTo(startX, startY);
 
           // Draw the line from 30px to (canvas.width - 30px)
-          for (let x = startX; x < canvas.width - 30; x++) {
+          for (let x = startX; x < canvas.width - 20; x++) {
             const yOffset = exponentialWave(
               x,
               time,
