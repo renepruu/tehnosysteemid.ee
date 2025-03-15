@@ -29,9 +29,8 @@ function App() {
         />
         <ProductCard
           name="IDEA Architecture"
-          details="DWG & IFC ühilduv, IDEA Architecture on võimas 64-bitine BIM tarkvara 3D ja 2D arhitektuurseks disainiks, renderdamiseks, animatsiooniks, plaanimiseks, kuluarvestuseks ja ehitusdokumentatsiooniks.
-
-IDEA on madala hinna alternatiiv Revit® või ArchiCAD® tarkvarale, samas kui see on lihtsam ja kiirem kasutada ning oluliselt odavam."
+          details="DWG & IFC ühilduv, IDEA Architecture on võimas 64-bitine BIM tarkvara 3D ja 2D arhitektuurseks disainiks, renderdamiseks, animatsiooniks, plaanimiseks ja ehitusdokumentatsiooniks.
+IDEA on madala hinna alternatiiv Revit® või ArchiCAD® tarkvarale."
           externalLink="https://cad.ee/toode/idea-architecture/"
           imageUrl="https://www.4msa.com/images/IDEA/IDEAlogo.png" // Add image URL
         />

@@ -76,18 +76,16 @@
     font-size: 18px;
     border-radius: 10%;
     transform: rotateY(180deg);
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     height: 100%;
   }
   
-  /* Existing button styles */
   .flip-card-back button {
     position: relative; /* Required for positioning the pseudo-element */
     background-color: hsla(0, 0%, 100%, 0.623); 
     color: hsl(52, 38%, 8%);
-    font-style: italic;
-    font-family: Helvetica;
+    font-family: "SansReg";
     font-size:20px;
     padding: 10px 30px;
     cursor: pointer;
