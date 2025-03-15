@@ -118,6 +118,8 @@
 
 .product-card img {
   display: block;
+  pointer-events: none; /* Disable dragging */
+  -webkit-user-drag: none; /* For WebKit browsers like Chrome and Safari */
   width: 200px;
   height: 200px;
   object-fit: contain; /* or cover */

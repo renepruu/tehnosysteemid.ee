@@ -5,6 +5,8 @@ import "./index.css";
 import { motion } from "framer-motion";
 import "./ProductCard.css";
 import "./CompanyInfo.css";
+import "./AdditionalSection.css";
+import AdditionalSection from "./AdditionalSection";
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
         />
         <ProductCard
           name="IDEA Architecture"
-          details="DWG & IFC ühilduv, IDEA Architecture on võimas 64-bitine BIM tarkvara 3D ja 2D arhitektuurseks disainiks, renderdamiseks, animatsiooniks, plaanimiseks ja ehitusdokumentatsiooniks."
+          details="IDEA Architecture on võimas 64-bitine BIM tarkvara 3D ja 2D arhitektuurseks disainiks, renderdamiseks, animatsiooniks, plaanimiseks ja ehitusdokumentatsiooniks."
           externalLink="https://cad.ee/toode/idea-architecture/"
           imageUrl="https://www.4msa.com/images/IDEA/IDEAlogo.png"
         />
@@ -52,11 +54,12 @@ function App() {
           imageUrl="https://www.4msa.com/images/FINE/FineSANIlogo.png"
         />
       </motion.div>
-
+      {/* Custom Section */}
+      <AdditionalSection />
       {/* Company Info Section */}
       <div className="company-info-section">
         <div className="company-info">
-          <h3 className="company-name">TEHNOSÜSTEEMIDE OÜ</h3>
+          <h3 className="company-name">Tehnosüsteemide OÜ</h3>
           <p className="company-description">
             Oleme 4M CAD & BIM projekteerimise tarkvara ametlik edasimüüja
             Eestis. Pakume 4M CAD tarkvara alternatiivina DWG
