@@ -135,7 +135,7 @@ const MovingBackground = () => {
           }
         });
 
-        time += 0.001; // Increment time for animation
+        time += 0.0005; // Increment time for animation
         requestAnimationFrame(animate);
       };
 

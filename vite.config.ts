@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/tehnosysteemid.ee/', // Make sure this matches your repo name
   plugins: [react()],
   build: {
-    minify: false,
+    minify: true,
     outDir: 'dist',
   },
 });

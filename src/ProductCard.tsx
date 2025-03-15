@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Define the props interface
 interface ProductCardProps {
   name: string;
   details: string;
   externalLink: string;
-  imageUrl: string; // Add imageUrl prop
+  imageUrl: string;
 }
 
 // Functional component for the product card
@@ -15,16 +15,29 @@ const ProductCard: React.FC<ProductCardProps> = ({
   externalLink,
   imageUrl, // Destructure imageUrl
 }) => {
-  const handleButtonClick = () => {
+  // State to track whether the card is flipped
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  // Handle card click to toggle the flipped state
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  // Handle button click to open the external link
+  const handleButtonClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent the card from flipping when the button is clicked
     window.open(externalLink, "_blank");
   };
 
   return (
-    <div className="product-card">
+    <div
+      className={`product-card ${isFlipped ? "flipped" : ""}`}
+      onClick={handleCardClick}
+    >
       <div className="flip-card-inner">
         {/* Front side of the card */}
         <div className="flip-card-front">
-          <img src={imageUrl} alt={name} /> {/* Use imageUrl prop */}
+          <img src={imageUrl} alt={name} />
         </div>
 
         {/* Back side of the card */}

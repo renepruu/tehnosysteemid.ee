@@ -4,18 +4,12 @@ const WhatWeDo = () => {
   return (
     <div className="what-we-do-container">
       <div className="what-we-do-content">
-        <h1>Mida Me Teeme</h1>
-        <h2>Tark Alternatiiv AutoCAD-ile</h2>
-        <p>
-          Oleme 4M CAD & BIM projekteerimise tarkvara ametlik edasimüüja Eestis.
-          Pakume 4M CAD tarkvara alternatiivina DWG joonestamisprogrammile
-          Autocad®.
-        </p>
-        <p>
-          4M CAD on tarkvara, mis on mõeldud ehitusprojektide projekteerimiseks
-          ja dokumenteerimiseks. Tarkvara sisaldab kõiki vajalikke tööriistu, et
-          luua professionaalseid ehitusprojekte.
-        </p>
+        <h1>
+          Tark Alternatiiv <br></br> AutoCAD-ile
+        </h1>
+        <h2>
+          Rikkalik komplekt tööriistu, mis pakuvad erakordset arendajakogemust
+        </h2>
       </div>
     </div>
   );

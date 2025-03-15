@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
   background: 
     radial-gradient(circle at bottom, #4a3dbf 1%, rgb(0, 0, 0) 70%) no-repeat, /* Existing radial gradient */
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 100%); /* Fade to black at the bottom */
@@ -29,4 +30,11 @@ canvas {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+/* Add a new section for company info */
+.company-info-section {
+  background: linear-gradient(to top, #1a1a1a, #333333); /* Dark gradient background */
+  color: hsl(0, 0%, 100%);
+  padding: 50px 20px; /* Add padding for spacing */
+  text-align: center;
 }
