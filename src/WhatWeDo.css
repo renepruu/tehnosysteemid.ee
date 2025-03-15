@@ -1,34 +1,49 @@
-
+@font-face {
+  font-family: "SansReg";
+  src: url("/src/assets/fonts/SansRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .what-we-do-container {
     max-width: 1355px;
-    margin: 100px auto; /* Add more space above and below */
-    padding: 20px;
-    border: 1px solid hsla(0, 0%, 100%, 0.075); 
-    box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0.089);
-    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 110px 0px auto;
+    padding-left: 250px;
+    border: 1px solid hsla(0, 0%, 48%, 0);
+    box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0);
+    border-radius: 60px;
+    text-align: left;
   }
   
   .what-we-do-content {
-    background-color: hsla(0, 0%, 100%, 0.699); /* Match the product card color */
-
-    color: hsl(52, 38%, 8%); /* Text color */
-    padding-bottom: 30px;
+    background-color: #4937d300; /* Match the product card color */
+    color: hsl(0, 0%, 100%); /* Text color */
+    padding-bottom: 25px;
     padding-top: 10px;
-    border-radius: 40px;
+    font-family: "SansReg";
     text-align: center;
-    box-shadow: 0px 4px 8px hsla(0, 0%, 16%, 0.089);
+    border-radius: 50px;
+    text-align: left;
   }
   
+  .what-we-do-content h1 {
+    font-size: 90px;
+    font-family:"SansReg";
+    margin-bottom: 40px;
+    text-align: left;
+  }
   .what-we-do-content h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    font-family: Helvetica, sans-serif;
-    margin-bottom: 40px
+    font-family: "SansReg";
+    margin-bottom: 40px;
+    text-align: left;
   }
   
   .what-we-do-content p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
-    font-family: Helvetica, sans-serif;
+    font-family: "SansReg";
+    text-align: left;
   }

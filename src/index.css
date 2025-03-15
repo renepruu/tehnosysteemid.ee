@@ -1,10 +1,19 @@
+@font-face {
+  font-family: "SansReg";
+  src: url("/src/assets/fonts/SansRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
   background: 
-  hsla(0, 0%, 100%, 1);
-  background-attachment: fixed;
+    radial-gradient(circle at bottom, #4a3dbf 1%, rgb(0, 0, 0) 70%) no-repeat, /* Existing radial gradient */
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 100%); /* Fade to black at the bottom */
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-blend-mode: overlay; /* Blend the gradients together */
 }
+
 .moving-background {
   position: fixed; /* Fixed position to cover the entire screen */
   top: 0;
@@ -12,7 +21,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1; /* Ensure it's behind other content */
-  background-color: rgba(0, 0, 0, 0.1); /* Temporary background to check visibility */
 }
 canvas {
   position: absolute;
@@ -21,53 +29,4 @@ canvas {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-
-header.hidden {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-/* Company Info Section */
-.company-info {
-  font-family: Helvetica;
-  margin-top: 50px; /* Space from products */
-  padding: 20px;
-  text-align: center;
-  color: hsl(52, 38%, 8%);
-}
-
-.company-name {
-  font-size: 45px;
-  font-weight:bolder;
-  margin-bottom: 20px;
-  letter-spacing:normal;
-  text-align: center;
-  color: hsl(52, 38%, 8%);
-}
-
-.company-description {
-  font-size: 20px;
-  font-family: Helvetica;
-  font-style: italic;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 10px;
-  color: hsl(52, 38%, 8%);
-}
-
-.info {
-  margin-top: 22px;
-  font-family: Helvetica;
-  color: hsl(52, 38%, 8%);
-  text-align: center;
-}
-
-.info h4 {
-  font-family: Helvetica;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 15px;
-  color: hsl(52, 38%, 8%);
 }

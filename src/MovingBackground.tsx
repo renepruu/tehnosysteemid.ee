@@ -14,8 +14,6 @@ const MovingBackground = () => {
     const initialResizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      console.log(canvas.width, canvas.height);
-      console.log(window.innerWidth, window.innerHeight);
     };
 
     // Define line types with slight variations (except opacity)
@@ -25,7 +23,7 @@ const MovingBackground = () => {
         frequency: 0.002,
         opacity: 0.7,
         speed: 50,
-        color: "rgba(201, 202, 134, 0.7)",
+        color: "rgba(255, 223, 88, 0.7)",
         xOffset: 0,
       }, // Line 1
       {
@@ -33,7 +31,7 @@ const MovingBackground = () => {
         frequency: 0.003,
         opacity: 0.7,
         speed: 40,
-        color: "rgba(201, 202, 134, 0.7)",
+        color: "rgba(238, 130, 238, 0.7)",
         xOffset: 0,
       }, // Line 2
       {
@@ -41,7 +39,7 @@ const MovingBackground = () => {
         frequency: 0.0015,
         opacity: 0.7,
         speed: 60,
-        color: "rgba(201, 202, 134, 0.7)",
+        color: "rgba(255, 255, 255, 0.7)",
         xOffset: 0,
       }, // Line 3
       {
@@ -49,41 +47,17 @@ const MovingBackground = () => {
         frequency: 0.0025,
         opacity: 0.7,
         speed: 30,
-        color: "rgba(201, 202, 134, 0.7)",
+        color: "rgba(0, 255, 255, 0.7)",
         xOffset: 0,
       }, // Line 4
-      {
-        amplitude: 60,
-        frequency: 0.001,
-        opacity: 0.7,
-        speed: 70,
-        color: "rgba(201, 202, 134, 0.7)",
-        xOffset: 0,
-      }, // Line 5
       {
         amplitude: 70,
         frequency: 0.0035,
         opacity: 0.7,
         speed: 20,
-        color: "rgba(201, 202, 134, 0.7)",
+        color: "rgba(64, 224, 208, 0.7)",
         xOffset: 0,
       }, // Line 6
-      {
-        amplitude: 100,
-        frequency: 0.0008,
-        opacity: 0.7,
-        speed: 80,
-        color: "rgba(201, 202, 134, 0.7)",
-        xOffset: 0,
-      }, // Line 7
-      {
-        amplitude: 50,
-        frequency: 0.0022,
-        opacity: 0.7,
-        speed: 35,
-        color: "rgba(201, 202, 134, 0.7)",
-        xOffset: 0,
-      }, // Line 8
     ];
 
     // Define vertical positions for the lines
@@ -149,7 +123,7 @@ const MovingBackground = () => {
 
           // Set line style
           ctx.strokeStyle = line.color; // Use the line's color
-          ctx.lineWidth = 1; // Fixed line width for consistency
+          ctx.lineWidth = 3; // Fixed line width for consistency
           ctx.stroke();
 
           // Move the line horizontally
