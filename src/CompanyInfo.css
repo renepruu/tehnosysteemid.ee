@@ -4,13 +4,12 @@
     padding: 5px 20px 20px 20px; /* Add padding for spacing */
     text-align: center; /* Center-align the content */
     color: hsl(0, 0%, 100%);
-    z-index: 1; /* Ensure it appears above the moving background */
-    position: relative; /* Required for z-index to work */
+
   }
 .company-info {
     font-family: "SansReg";
     margin: 0 auto; /* Center the content */
-    max-width: 1200px; /* Limit the width */
+    max-width: 800px; /* Limit the width */
     padding: 2px;
     text-align: center;
     color: hsl(0, 0%, 100%);
