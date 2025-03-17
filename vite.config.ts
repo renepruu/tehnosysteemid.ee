@@ -2,10 +2,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: process.env.DEPLOY_ENV === 'github' ? '/tehnosysteemid.ee/' : '/', // Use '/tehnosysteemid.ee/' for GitHub Pages, '/' for Netlify
+  base: '/tehnosysteemid.ee/', // Correct base path for GitHub Pages
   plugins: [react()],
   build: {
     minify: true,
-    outDir: 'dist',
+    outDir: 'dist', // Ensure the output directory is 'dist'
   },
 });
