@@ -1,12 +1,12 @@
 import ProductCard from "./ProductCard";
 import MovingBackground from "./MovingBackground";
-import WhatWeDo from "./WhatWeDo"; // Import the updated WhatWeDo component
+import WhatWeDo from "./WhatWeDo";
+import AdditionalSection from "./AdditionalSection";
 import "./index.css";
 import { motion } from "framer-motion";
 import "./ProductCard.css";
 import "./CompanyInfo.css";
 import "./AdditionalSection.css";
-import AdditionalSection from "./AdditionalSection";
 
 function App() {
   return (
@@ -49,17 +49,19 @@ function App() {
         />
         <ProductCard
           name="FINE Sani"
-          details="FineSANI on integreeritud tarkvaratööjaam sanitaardisaini jaoks, mis genereerib vajalikud arvutused otse joonistelt ning seejärel loob automaatselt lõplikud joonised (plaanivaated, paneelidiagrammid, detailid) ja täieliku juhtumiuuringu dokumentatsiooni koos materjalide nimekirja ja kuluarvestusega."
+          details="FineSANI on integreeritud tarkvaratööjaam sanitaardisaini jaoks, mis genereerib vajalikud arvutused otse joonistelt ning seejärel loob automaatselt lõplikud lõplikud joonised."
           externalLink="https://cad.ee/toode/fine-sani/"
           imageUrl="https://www.4msa.com/images/FINE/FineSANIlogo.png"
         />
       </motion.div>
+
       {/* Custom Section */}
       <AdditionalSection />
+
       {/* Company Info Section */}
       <div className="company-info-section">
         <div className="company-info">
-          <h3 className="company-name">Tehnosüsteemide OÜ</h3>
+          <h3 className="company-name"> Tehnosysteemide OÜ</h3>
           <p className="company-description">
             Oleme 4M CAD & BIM projekteerimise tarkvara ametlik edasimüüja
             Eestis. Pakume 4M CAD tarkvara alternatiivina DWG
