@@ -16,7 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   imageUrl, // Destructure imageUrl
 }) => {
   // State to track whether the card is flipped
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(true);
 
   // Handle card click to toggle the flipped state
   const handleCardClick = () => {

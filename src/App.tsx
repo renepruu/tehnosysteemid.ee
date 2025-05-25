@@ -2,11 +2,11 @@ import ProductCard from "./ProductCard";
 import MovingBackground from "./MovingBackground";
 import WhatWeDo from "./WhatWeDo";
 import AdditionalSection from "./AdditionalSection";
-import "./index.css";
+import "./style/index.css";
 import { motion } from "framer-motion";
-import "./ProductCard.css";
-import "./CompanyInfo.css";
-import "./AdditionalSection.css";
+import "./style/ProductCard.css";
+import "./style/CompanyInfo.css";
+import "./style/AdditionalSection.css";
 
 function App() {
   return (
