@@ -1,5 +1,5 @@
 import React from "react";
-import "./style/AdditionalSection.css";
+import "../style/AdditionalSection.css";
 
 const AdditionalSection: React.FC = () => {
   // Function to handle button clicks

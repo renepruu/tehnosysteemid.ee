@@ -1,4 +1,4 @@
-import "./style/WhatWeDo.css"; // Create a new CSS file for this component
+import "../style/WhatWeDo.css"; // Create a new CSS file for this component
 
 const WhatWeDo = () => {
   return (
