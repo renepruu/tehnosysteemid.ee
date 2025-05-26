@@ -16,11 +16,8 @@ const Navbar = () => {
 
   return (
     <nav style={{ ...navStyle, opacity, transition: "opacity 0.2s ease" }}>
-      <Link to="/tehnosysteemid.ee/" style={linkStyle}>Home</Link>
-      <Link to="/tehnosysteemid.ee/#about" style={linkStyle}>About</Link>
-      <Link to="/tehnosysteemid.ee/#services" style={linkStyle}>Services</Link>
-      <Link to="/tehnosysteemid.ee/#projects" style={linkStyle}>Projects</Link>
-      <Link to="/contact" style={linkStyle}>Contact</Link>
+      <Link to="/tehnosysteemid.ee/" style={linkStyle}>Avaleht</Link>
+      <Link to="/tehnosysteemid.ee/contact" style={linkStyle}>Kontaktid</Link>
     </nav>
   );
 };
@@ -42,6 +39,9 @@ const navStyle: React.CSSProperties = {
 
 const linkStyle: React.CSSProperties = {
   color: "white",
+  fontFamily: "SansRegular",
+  fontSize: "1.9rem",
+
   textDecoration: "none",
 };
 

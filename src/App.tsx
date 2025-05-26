@@ -9,7 +9,7 @@ function App() {
 
       <Routes>
         <Route path="/tehnosysteemid.ee" element={<MainPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/tehnosysteemid.ee/contact" element={<ContactPage />} />
       </Routes>
 
   );
