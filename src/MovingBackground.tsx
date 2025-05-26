@@ -103,7 +103,6 @@ const MovingBackground = () => {
           const line = lineTypes[index]; // Get the line type for this line
           ctx.beginPath();
 
-          // Start at 30px from the left edge
           let startX = 20;
           let startY =
             verticalPosition +

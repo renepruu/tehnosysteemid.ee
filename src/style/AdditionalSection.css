@@ -18,7 +18,7 @@
 
   
   .services-container {
-    background: rgba(0, 51, 51, 1); /* Dark turquoise */
+    background: rgb(38, 38, 38); /* Dark turquoise */
     margin: 0 auto; /* Center the container horizontally */
     padding: 50px; /* Add consistent padding */
     max-width: 1200px; /* Limit the width of the container */
@@ -37,8 +37,8 @@
     font-family: "SansReg";
     background: linear-gradient(
       to bottom right,
-      rgba(255, 223, 88, 0.7), /* Yellow */
-      rgba(238, 130, 238, 0.7) /* Violet */
+      rgba(156, 156, 156, 0.7), /* Yellow */
+      rgba(108, 108, 108, 0.7) /* Violet */
     );
     padding: 20px;
     border-radius: 15px;
