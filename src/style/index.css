@@ -42,8 +42,8 @@ html body {
   background-color: black;
   color: white;
   background: 
-    radial-gradient(circle at bottom, #0d0c18 1%, rgb(23, 22, 45) 70%) no-repeat, /* Existing radial gradient */
-    linear-gradient(to bottom, rgba(9, 8, 15, 0) 70%, rgb(20, 19, 40) 100%); /* Fade to black at the bottom */
+    radial-gradient(circle at bottom, #1e1833 10%, rgb(17, 17, 30) 70%) no-repeat, /* Existing radial gradient */
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgb(20, 19, 40) 100%); /* Fade to black at the bottom */
   background-size: cover; /* Ensure the background covers the entire page */
   background-blend-mode: overlay; /* Blend the gradients together */
 }

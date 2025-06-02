@@ -27,7 +27,7 @@ const navStyle: React.CSSProperties = {
   justifyContent: "center",
   gap: "4rem",
   padding: "1rem 0",
-  backgroundColor: "rgb(0, 0, 0)",
+  backgroundColor: "rgba(255, 255, 255, 0.06)",
   fontFamily: "SansRegular",
   fontStyle: "bold",
   fontSize: "1.9rem",
